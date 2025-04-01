@@ -2,7 +2,20 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.4.4'
 	id 'io.spring.dependency-management' version '1.1.7'
+	id "de.undercouch.download" version "5.3.0"
 }
+task downloadNewrelic(type: Download) {
+    mkdir 'newrelic'
+    src 'https://download.newrelic.com/newrelic/java-agent/newrelic-agent/current/newrelic-java.zip'
+    dest file('newrelic')
+}
+
+task unzipNewrelic(type: Copy) {
+    from zipTree(file('newrelic/newrelic-java.zip'))
+    into rootDir
+}
+
+
 
 group = 'patrones.pacialdos'
 version = '0.0.1-SNAPSHOT'

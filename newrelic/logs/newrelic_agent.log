@@ -1,0 +1,292 @@
+2025-03-31T19:13:59,510-0500 [15460 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-03-31T19:13:59,512-0500 [15460 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-03-31T19:13:59,512-0500 [15460 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-03-31T19:13:59,513-0500 [15460 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-03-31T19:13:59,530-0500 [15460 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-03-31T19:13:59,531-0500 [15460 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-03-31T19:14:00,874-0500 [15460 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-03-31T19:14:07,645-0500 [15460 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-03-31T19:14:08,487-0500 [15460 1] com.newrelic INFO: Setting audit_mode to false
+2025-03-31T19:14:08,894-0500 [15460 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-03-31T19:14:08,909-0500 [15460 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-03-31T19:14:08,910-0500 [15460 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@3b22cdd0
+2025-03-31T19:14:08,911-0500 [15460 1] com.newrelic INFO: Premain startup complete in 11.209ms
+2025-03-31T19:14:08,920-0500 [15460 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-03-31T19:14:08,937-0500 [15460 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-03-31T19:14:08,943-0500 [15460 42] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2025-03-31T19:16:17,811-0500 [26364 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-03-31T19:16:17,812-0500 [26364 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-03-31T19:16:17,813-0500 [26364 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-03-31T19:16:17,814-0500 [26364 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-03-31T19:16:17,830-0500 [26364 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-03-31T19:16:17,831-0500 [26364 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-03-31T19:16:19,078-0500 [26364 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-03-31T19:16:25,766-0500 [26364 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-03-31T19:16:26,623-0500 [26364 1] com.newrelic INFO: Setting audit_mode to false
+2025-03-31T19:16:27,054-0500 [26364 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-03-31T19:16:27,061-0500 [26364 1] com.newrelic INFO: Host name is DESKTOP-HKB1NLP, display host DESKTOP-HKB1NLP for application parcial
+2025-03-31T19:16:27,062-0500 [26364 1] com.newrelic INFO: High security is configured locally for application parcial.
+2025-03-31T19:16:27,065-0500 [26364 1] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-03-31T19:16:28,246-0500 [26364 1] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2025-03-31T19:16:28,845-0500 [26364 1] com.newrelic INFO: Remote connect call failed : com.newrelic.agent.ForceRestartException: Account Security Violation: The agent's local 'high_security' setting is true but this account is not configured for high security. It can be set at https://rpm.newrelic.com/accounts/6570535/high_security.
+2025-03-31T19:16:28,846-0500 [26364 1] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for parcial: com.newrelic.agent.ForceRestartException: Account Security Violation: The agent's local 'high_security' setting is true but this account is not configured for high security. It can be set at https://rpm.newrelic.com/accounts/6570535/high_security
+2025-03-31T19:16:28,850-0500 [26364 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-03-31T19:16:28,850-0500 [26364 68] com.newrelic INFO: Host name is DESKTOP-HKB1NLP, display host DESKTOP-HKB1NLP for application parcial
+2025-03-31T19:16:28,851-0500 [26364 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@3b22cdd0
+2025-03-31T19:16:28,852-0500 [26364 68] com.newrelic INFO: High security is configured locally for application parcial.
+2025-03-31T19:16:28,853-0500 [26364 1] com.newrelic INFO: Premain startup complete in 12.689ms
+2025-03-31T19:16:28,855-0500 [26364 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-03-31T19:16:28,855-0500 [26364 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-03-31T19:16:28,887-0500 [26364 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-03-31T21:08:46,271-0500 [18524 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-03-31T21:08:46,271-0500 [18524 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-03-31T21:08:46,272-0500 [18524 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-03-31T21:08:46,272-0500 [18524 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-03-31T21:08:46,281-0500 [18524 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-03-31T21:08:46,281-0500 [18524 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-03-31T21:08:46,976-0500 [18524 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-03-31T21:08:52,858-0500 [18524 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-03-31T21:08:53,355-0500 [18524 1] com.newrelic INFO: Setting audit_mode to false
+2025-03-31T21:08:53,606-0500 [18524 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-03-31T21:08:53,612-0500 [18524 1] com.newrelic INFO: Host name is DESKTOP-HKB1NLP, display host DESKTOP-HKB1NLP for application parcial
+2025-03-31T21:08:53,612-0500 [18524 1] com.newrelic INFO: High security is configured locally for application parcial.
+2025-03-31T21:08:53,614-0500 [18524 1] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-03-31T21:08:54,555-0500 [18524 1] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2025-03-31T21:08:55,071-0500 [18524 1] com.newrelic INFO: Remote connect call failed : com.newrelic.agent.ForceRestartException: Account Security Violation: The agent's local 'high_security' setting is true but this account is not configured for high security. It can be set at https://rpm.newrelic.com/accounts/6570535/high_security.
+2025-03-31T21:08:55,071-0500 [18524 1] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for parcial: com.newrelic.agent.ForceRestartException: Account Security Violation: The agent's local 'high_security' setting is true but this account is not configured for high security. It can be set at https://rpm.newrelic.com/accounts/6570535/high_security
+2025-03-31T21:08:55,073-0500 [18524 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-03-31T21:08:55,073-0500 [18524 68] com.newrelic INFO: Host name is DESKTOP-HKB1NLP, display host DESKTOP-HKB1NLP for application parcial
+2025-03-31T21:08:55,074-0500 [18524 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@3b22cdd0
+2025-03-31T21:08:55,074-0500 [18524 68] com.newrelic INFO: High security is configured locally for application parcial.
+2025-03-31T21:08:55,074-0500 [18524 1] com.newrelic INFO: Premain startup complete in 9.580ms
+2025-03-31T21:08:55,075-0500 [18524 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-03-31T21:08:55,075-0500 [18524 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-03-31T21:08:55,087-0500 [18524 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-03-31T21:11:29,565-0500 [5948 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-03-31T21:11:29,566-0500 [5948 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-03-31T21:11:29,567-0500 [5948 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-03-31T21:11:29,567-0500 [5948 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-03-31T21:11:29,576-0500 [5948 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-03-31T21:11:29,577-0500 [5948 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-03-31T21:11:30,319-0500 [5948 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-03-31T21:11:36,872-0500 [5948 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-03-31T21:11:37,374-0500 [5948 1] com.newrelic INFO: Setting audit_mode to false
+2025-03-31T21:11:37,599-0500 [5948 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-03-31T21:11:37,606-0500 [5948 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-03-31T21:11:37,607-0500 [5948 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@3b22cdd0
+2025-03-31T21:11:37,607-0500 [5948 1] com.newrelic INFO: Premain startup complete in 8.854ms
+2025-03-31T21:11:37,610-0500 [5948 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-03-31T21:11:37,622-0500 [5948 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-03-31T21:11:37,625-0500 [5948 42] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2025-03-31T21:30:42,467-0500 [14532 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-03-31T21:30:42,468-0500 [14532 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-03-31T21:30:42,468-0500 [14532 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-03-31T21:30:42,469-0500 [14532 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-03-31T21:30:42,485-0500 [14532 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-03-31T21:30:42,486-0500 [14532 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-03-31T21:30:43,747-0500 [14532 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-03-31T21:30:50,621-0500 [14532 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-03-31T21:30:51,542-0500 [14532 1] com.newrelic INFO: Setting audit_mode to false
+2025-03-31T21:30:51,969-0500 [14532 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-03-31T21:30:51,986-0500 [14532 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-03-31T21:30:51,987-0500 [14532 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-03-31T21:30:51,988-0500 [14532 1] com.newrelic INFO: Premain startup complete in 11.149ms
+2025-03-31T21:30:51,997-0500 [14532 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-03-31T21:30:52,010-0500 [14532 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-03-31T21:30:52,016-0500 [14532 42] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2025-03-31T21:31:20,582-0500 [8168 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-03-31T21:31:20,584-0500 [8168 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-03-31T21:31:20,584-0500 [8168 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-03-31T21:31:20,585-0500 [8168 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-03-31T21:31:20,604-0500 [8168 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-03-31T21:31:20,604-0500 [8168 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-03-31T21:31:21,962-0500 [8168 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-03-31T21:31:30,131-0500 [8168 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-03-31T21:31:31,034-0500 [8168 1] com.newrelic INFO: Setting audit_mode to false
+2025-03-31T21:31:31,482-0500 [8168 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-03-31T21:31:31,496-0500 [8168 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-03-31T21:31:31,497-0500 [8168 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-03-31T21:31:31,499-0500 [8168 1] com.newrelic INFO: Premain startup complete in 12.569ms
+2025-03-31T21:31:31,505-0500 [8168 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-03-31T21:31:31,522-0500 [8168 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-03-31T21:31:31,527-0500 [8168 42] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2025-03-31T21:37:58,351-0500 [20692 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-03-31T21:37:58,353-0500 [20692 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-03-31T21:37:58,354-0500 [20692 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-03-31T21:37:58,355-0500 [20692 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-03-31T21:37:58,371-0500 [20692 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-03-31T21:37:58,372-0500 [20692 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-03-31T21:37:59,704-0500 [20692 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-03-31T21:38:06,377-0500 [20692 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-03-31T21:38:07,173-0500 [20692 1] com.newrelic INFO: Setting audit_mode to false
+2025-03-31T21:38:07,610-0500 [20692 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-03-31T21:38:07,621-0500 [20692 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-03-31T21:38:07,621-0500 [20692 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-03-31T21:38:07,622-0500 [20692 1] com.newrelic INFO: Premain startup complete in 10.912ms
+2025-03-31T21:38:07,626-0500 [20692 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-03-31T21:38:07,636-0500 [20692 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-03-31T21:38:07,641-0500 [20692 42] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2025-03-31T21:41:51,746-0500 [25832 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-03-31T21:41:51,747-0500 [25832 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-03-31T21:41:51,748-0500 [25832 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-03-31T21:41:51,749-0500 [25832 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-03-31T21:41:51,765-0500 [25832 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-03-31T21:41:51,766-0500 [25832 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-03-31T21:41:53,068-0500 [25832 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-03-31T21:42:00,191-0500 [25832 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-03-31T21:42:01,053-0500 [25832 1] com.newrelic INFO: Setting audit_mode to false
+2025-03-31T21:42:01,486-0500 [25832 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-03-31T21:42:01,497-0500 [25832 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-03-31T21:42:01,498-0500 [25832 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-03-31T21:42:01,499-0500 [25832 1] com.newrelic INFO: Premain startup complete in 11.397ms
+2025-03-31T21:42:01,504-0500 [25832 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-03-31T21:42:01,515-0500 [25832 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-03-31T21:42:01,521-0500 [25832 42] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2025-03-31T21:43:39,893-0500 [28012 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-03-31T21:43:39,894-0500 [28012 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-03-31T21:43:39,895-0500 [28012 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-03-31T21:43:39,896-0500 [28012 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-03-31T21:43:39,911-0500 [28012 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-03-31T21:43:39,912-0500 [28012 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-03-31T21:43:41,155-0500 [28012 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-03-31T21:43:48,242-0500 [28012 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-03-31T21:43:49,145-0500 [28012 1] com.newrelic INFO: Setting audit_mode to false
+2025-03-31T21:43:49,639-0500 [28012 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-03-31T21:43:49,652-0500 [28012 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-03-31T21:43:49,653-0500 [28012 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-03-31T21:43:49,655-0500 [28012 1] com.newrelic INFO: Premain startup complete in 11.363ms
+2025-03-31T21:43:49,662-0500 [28012 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-03-31T21:43:49,679-0500 [28012 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-03-31T21:43:49,684-0500 [28012 42] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2025-03-31T21:44:17,462-0500 [6716 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-03-31T21:44:17,464-0500 [6716 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-03-31T21:44:17,464-0500 [6716 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-03-31T21:44:17,465-0500 [6716 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-03-31T21:44:17,480-0500 [6716 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-03-31T21:44:17,481-0500 [6716 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-03-31T21:44:18,765-0500 [6716 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-03-31T21:44:25,467-0500 [6716 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-03-31T21:44:26,334-0500 [6716 1] com.newrelic INFO: Setting audit_mode to false
+2025-03-31T21:44:26,763-0500 [6716 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-03-31T21:44:26,793-0500 [6716 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-03-31T21:44:26,794-0500 [6716 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-03-31T21:44:26,795-0500 [6716 1] com.newrelic INFO: Premain startup complete in 10.954ms
+2025-03-31T21:44:26,801-0500 [6716 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-03-31T21:44:26,814-0500 [6716 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-03-31T21:44:26,819-0500 [6716 42] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2025-04-01T07:50:49,937-0500 [31408 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-04-01T07:50:49,938-0500 [31408 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-04-01T07:50:49,938-0500 [31408 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-04-01T07:50:49,938-0500 [31408 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-04-01T07:50:49,948-0500 [31408 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-04-01T07:50:49,948-0500 [31408 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-04-01T07:50:50,732-0500 [31408 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-04-01T07:50:58,763-0500 [27956 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-04-01T07:50:58,763-0500 [27956 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-04-01T07:50:58,764-0500 [27956 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-04-01T07:50:58,764-0500 [27956 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-04-01T07:50:58,773-0500 [27956 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-04-01T07:50:58,773-0500 [27956 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-04-01T07:50:59,449-0500 [27956 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-04-01T07:51:05,529-0500 [27956 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-04-01T07:51:06,009-0500 [27956 1] com.newrelic INFO: Setting audit_mode to false
+2025-04-01T07:51:06,237-0500 [27956 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-04-01T07:51:06,245-0500 [27956 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-04-01T07:51:06,246-0500 [27956 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-04-01T07:51:06,247-0500 [27956 1] com.newrelic INFO: Premain startup complete in 8.308ms
+2025-04-01T07:51:06,250-0500 [27956 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-04-01T07:51:06,257-0500 [27956 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-04-01T07:51:06,261-0500 [27956 42] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2025-04-01T07:58:09,326-0500 [18068 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-04-01T07:58:09,328-0500 [18068 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-04-01T07:58:09,328-0500 [18068 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-04-01T07:58:09,328-0500 [18068 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-04-01T07:58:09,338-0500 [18068 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-04-01T07:58:09,338-0500 [18068 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-04-01T07:58:10,061-0500 [18068 45] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-04-01T07:58:15,965-0500 [18068 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-04-01T07:58:16,393-0500 [18068 1] com.newrelic INFO: Setting audit_mode to false
+2025-04-01T07:58:16,641-0500 [18068 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-04-01T07:58:16,651-0500 [18068 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-04-01T07:58:16,651-0500 [18068 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-04-01T07:58:16,651-0500 [18068 1] com.newrelic INFO: Premain startup complete in 8.109ms
+2025-04-01T07:58:16,654-0500 [18068 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-04-01T07:58:20,471-0500 [18068 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.39
+2025-04-01T07:58:21,657-0500 [18068 68] com.newrelic INFO: Host name is DESKTOP-HKB1NLP, display host DESKTOP-HKB1NLP for application parcial
+2025-04-01T07:58:21,659-0500 [18068 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-01T07:58:22,612-0500 [18068 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2025-04-01T07:58:23,314-0500 [18068 68] com.newrelic INFO: Max payload size is 1.000.000 bytes
+2025-04-01T07:58:23,315-0500 [18068 68] com.newrelic INFO: Agent run id: BT932KbtyhfBAGRCJyNfho9n6-NQAAIBAAAnIQEAAEaUAgQd_FGfAwAGOC4xOS4wAA9ERVNLVE9QLUhLQjFOTFAAB3BhcmNpYWw
+2025-04-01T07:58:23,316-0500 [18068 68] com.newrelic INFO: Agent 18068@DESKTOP-HKB1NLP/parcial connected to collector.newrelic.com:443
+2025-04-01T07:58:23,316-0500 [18068 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/6570535/applications/503075231
+2025-04-01T07:58:23,318-0500 [18068 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-01T07:58:23,319-0500 [18068 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-01T07:58:23,319-0500 [18068 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-01T07:58:23,322-0500 [18068 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-01T07:58:23,323-0500 [18068 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-01T07:58:23,323-0500 [18068 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-01T07:58:23,884-0500 [18068 68] com.newrelic INFO: Real user monitoring is enabled for application parcial. Auto instrumentation is enabled.
+2025-04-01T07:58:23,884-0500 [18068 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-01T08:06:26,646-0500 [18068 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-04-01T08:06:33,166-0500 [23872 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-04-01T08:06:33,167-0500 [23872 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-04-01T08:06:33,168-0500 [23872 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-04-01T08:06:33,168-0500 [23872 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-04-01T08:06:33,177-0500 [23872 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-04-01T08:06:33,177-0500 [23872 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-04-01T08:06:33,964-0500 [23872 46] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-04-01T08:06:40,525-0500 [23872 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-04-01T08:06:40,948-0500 [23872 1] com.newrelic INFO: Setting audit_mode to false
+2025-04-01T08:06:41,188-0500 [23872 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-04-01T08:06:41,196-0500 [23872 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-04-01T08:06:41,197-0500 [23872 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-04-01T08:06:41,198-0500 [23872 1] com.newrelic INFO: Premain startup complete in 8.814ms
+2025-04-01T08:06:41,201-0500 [23872 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-04-01T08:06:45,059-0500 [23872 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.39
+2025-04-01T08:06:46,197-0500 [23872 68] com.newrelic INFO: Host name is DESKTOP-HKB1NLP, display host DESKTOP-HKB1NLP for application parcial
+2025-04-01T08:06:46,199-0500 [23872 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-01T08:06:47,048-0500 [23872 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2025-04-01T08:06:47,756-0500 [23872 68] com.newrelic INFO: Max payload size is 1.000.000 bytes
+2025-04-01T08:06:47,756-0500 [23872 68] com.newrelic INFO: Agent run id: BTuy7TXYkXkuAGRCJyNfho9n6-UwAAIBAAAnIQEAAF1AAgQd_FGfAwAGOC4xOS4wAA9ERVNLVE9QLUhLQjFOTFAAB3BhcmNpYWw
+2025-04-01T08:06:47,757-0500 [23872 68] com.newrelic INFO: Agent 23872@DESKTOP-HKB1NLP/parcial connected to collector.newrelic.com:443
+2025-04-01T08:06:47,758-0500 [23872 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/6570535/applications/503075231
+2025-04-01T08:06:47,760-0500 [23872 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-01T08:06:47,761-0500 [23872 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-01T08:06:47,761-0500 [23872 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-01T08:06:47,764-0500 [23872 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-01T08:06:47,764-0500 [23872 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-01T08:06:47,765-0500 [23872 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-01T08:06:47,989-0500 [23872 68] com.newrelic INFO: Real user monitoring is enabled for application parcial. Auto instrumentation is enabled.
+2025-04-01T08:06:47,990-0500 [23872 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-01T08:16:53,751-0500 [23872 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-04-01T08:16:59,374-0500 [1464 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-04-01T08:16:59,375-0500 [1464 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-04-01T08:16:59,375-0500 [1464 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-04-01T08:16:59,375-0500 [1464 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-04-01T08:16:59,386-0500 [1464 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.25.80.1
+2025-04-01T08:16:59,386-0500 [1464 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-04-01T08:17:00,275-0500 [1464 47] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-04-01T08:17:02,030-0500 [1464 43] com.newrelic INFO: RMIStubs Transformer started
+2025-04-01T08:17:06,635-0500 [1464 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-04-01T08:17:07,076-0500 [1464 1] com.newrelic INFO: Setting audit_mode to false
+2025-04-01T08:17:07,334-0500 [1464 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-04-01T08:17:07,345-0500 [1464 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-04-01T08:17:07,346-0500 [1464 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-04-01T08:17:07,346-0500 [1464 1] com.newrelic INFO: Premain startup complete in 8.765ms
+2025-04-01T08:17:07,350-0500 [1464 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-04-01T08:17:11,720-0500 [1464 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.39
+2025-04-01T08:17:17,370-0500 [1464 77] com.newrelic INFO: Host name is DESKTOP-HKB1NLP, display host DESKTOP-HKB1NLP for application parcial
+2025-04-01T08:17:17,372-0500 [1464 77] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-01T08:17:18,188-0500 [1464 77] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2025-04-01T08:17:18,662-0500 [1464 77] com.newrelic INFO: Max payload size is 1.000.000 bytes
+2025-04-01T08:17:18,663-0500 [1464 77] com.newrelic INFO: Agent run id: BTgEDi3R061vAGRCJyNfho9n6-fEAAIBAAAnIQEAAAW4AgQd_FGfAwAGOC4xOS4wAA9ERVNLVE9QLUhLQjFOTFAAB3BhcmNpYWw
+2025-04-01T08:17:18,664-0500 [1464 77] com.newrelic INFO: Agent 1464@DESKTOP-HKB1NLP/parcial connected to collector.newrelic.com:443
+2025-04-01T08:17:18,664-0500 [1464 77] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/6570535/applications/503075231
+2025-04-01T08:17:18,666-0500 [1464 77] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-01T08:17:18,667-0500 [1464 77] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-01T08:17:18,668-0500 [1464 77] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-01T08:17:18,671-0500 [1464 77] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-01T08:17:18,671-0500 [1464 77] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-01T08:17:18,672-0500 [1464 77] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-01T08:17:18,937-0500 [1464 77] com.newrelic INFO: Real user monitoring is enabled for application parcial. Auto instrumentation is enabled.
+2025-04-01T08:17:18,938-0500 [1464 77] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
