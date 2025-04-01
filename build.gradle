@@ -39,6 +39,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation 'com.newrelic.agent.java:newrelic-api:7.10.0'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
 	annotationProcessor 'org.projectlombok:lombok'

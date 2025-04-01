@@ -1,10 +1,10 @@
 package patrones.pacialdos.parcial.orm;
 
+
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
-
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -19,13 +19,11 @@ public class TransaccionORM {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "origen", nullable = false)
-    private CuentaORM origen;
+    @Column(nullable = false)
+    private Long origen;
 
-    @ManyToOne
-    @JoinColumn(name = "destino", nullable = false)
-    private CuentaORM destino;
+    @Column(nullable = false)
+    private Long destino;
 
     @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal monto;
@@ -33,4 +31,3 @@ public class TransaccionORM {
     @Column(nullable = false, updatable = false)
     private LocalDateTime timestamp = LocalDateTime.now();
 }
-
