@@ -339,3 +339,99 @@
 2025-04-03T10:42:22,124-0500 [23296 77] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
 2025-04-03T10:42:22,454-0500 [23296 77] com.newrelic INFO: Real user monitoring is enabled for application parcial. Auto instrumentation is enabled.
 2025-04-03T10:42:22,455-0500 [23296 77] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-03T12:36:13,828-0500 [16808 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-04-03T12:36:13,829-0500 [16808 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-04-03T12:36:13,830-0500 [16808 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-04-03T12:36:13,830-0500 [16808 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-04-03T12:36:13,848-0500 [16808 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.29.192.1
+2025-04-03T12:36:13,848-0500 [16808 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-04-03T12:36:15,466-0500 [16808 47] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-04-03T12:36:18,699-0500 [16808 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-04-03T12:36:19,046-0500 [16808 43] com.newrelic INFO: RMIStubs Transformer started
+2025-04-03T12:36:19,620-0500 [16808 1] com.newrelic INFO: Setting audit_mode to false
+2025-04-03T12:36:20,071-0500 [16808 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-04-03T12:36:20,083-0500 [16808 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-04-03T12:36:20,084-0500 [16808 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-04-03T12:36:20,085-0500 [16808 1] com.newrelic INFO: Premain startup complete in 8.034ms
+2025-04-03T12:36:20,090-0500 [16808 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-04-03T12:36:29,889-0500 [16808 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.39
+2025-04-03T12:36:50,136-0500 [16808 77] com.newrelic INFO: Host name is DESKTOP-HKB1NLP, display host DESKTOP-HKB1NLP for application parcial
+2025-04-03T12:36:50,138-0500 [16808 77] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-03T12:36:50,924-0500 [16808 77] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2025-04-03T12:36:51,741-0500 [16808 77] com.newrelic INFO: Max payload size is 1.000.000 bytes
+2025-04-03T12:36:51,743-0500 [16808 77] com.newrelic INFO: Agent run id: BZFI3wHfFOAiAGRCJyNfho9n7sd4AAIBAAAnIQEAAEGoAgQd_FGfAwAGOC4xOS4wAA9ERVNLVE9QLUhLQjFOTFAAB3BhcmNpYWw
+2025-04-03T12:36:51,745-0500 [16808 77] com.newrelic INFO: Agent 16808@DESKTOP-HKB1NLP/parcial connected to collector.newrelic.com:443
+2025-04-03T12:36:51,747-0500 [16808 77] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/6570535/applications/503075231
+2025-04-03T12:36:51,751-0500 [16808 77] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-03T12:36:51,751-0500 [16808 77] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-03T12:36:51,753-0500 [16808 77] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-03T12:36:51,759-0500 [16808 77] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-03T12:36:51,761-0500 [16808 77] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-03T12:36:51,765-0500 [16808 77] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-03T12:36:52,034-0500 [16808 77] com.newrelic INFO: Real user monitoring is enabled for application parcial. Auto instrumentation is enabled.
+2025-04-03T12:36:52,035-0500 [16808 77] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-03T12:43:27,739-0500 [16808 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-04-03T12:52:23,731-0500 [15640 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-04-03T12:52:23,733-0500 [15640 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-04-03T12:52:23,733-0500 [15640 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-04-03T12:52:23,734-0500 [15640 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-04-03T12:52:23,755-0500 [15640 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.29.192.1
+2025-04-03T12:52:23,755-0500 [15640 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-04-03T12:52:25,419-0500 [15640 47] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-04-03T12:52:28,522-0500 [15640 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-04-03T12:52:28,975-0500 [15640 43] com.newrelic INFO: RMIStubs Transformer started
+2025-04-03T12:52:29,480-0500 [15640 1] com.newrelic INFO: Setting audit_mode to false
+2025-04-03T12:52:30,001-0500 [15640 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-04-03T12:52:30,013-0500 [15640 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-04-03T12:52:30,014-0500 [15640 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-04-03T12:52:30,015-0500 [15640 1] com.newrelic INFO: Premain startup complete in 7.937ms
+2025-04-03T12:52:30,021-0500 [15640 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-04-03T12:52:38,848-0500 [15640 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.39
+2025-04-03T12:52:55,043-0500 [15640 77] com.newrelic INFO: Host name is DESKTOP-HKB1NLP, display host DESKTOP-HKB1NLP for application parcial
+2025-04-03T12:52:55,047-0500 [15640 77] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-03T12:52:55,729-0500 [15640 77] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2025-04-03T12:52:56,428-0500 [15640 77] com.newrelic INFO: Max payload size is 1.000.000 bytes
+2025-04-03T12:52:56,429-0500 [15640 77] com.newrelic INFO: Agent run id: BeOlkZKmoqQAAGRCJyNfho9n7ss4AAIBAAAnIQEAAD0YAgQd_FGfAwAGOC4xOS4wAA9ERVNLVE9QLUhLQjFOTFAAB3BhcmNpYWw
+2025-04-03T12:52:56,430-0500 [15640 77] com.newrelic INFO: Agent 15640@DESKTOP-HKB1NLP/parcial connected to collector.newrelic.com:443
+2025-04-03T12:52:56,431-0500 [15640 77] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/6570535/applications/503075231
+2025-04-03T12:52:56,435-0500 [15640 77] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-03T12:52:56,437-0500 [15640 77] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-03T12:52:56,437-0500 [15640 77] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-03T12:52:56,443-0500 [15640 77] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-03T12:52:56,444-0500 [15640 77] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-03T12:52:56,445-0500 [15640 77] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-03T12:52:57,052-0500 [15640 77] com.newrelic INFO: Real user monitoring is enabled for application parcial. Auto instrumentation is enabled.
+2025-04-03T12:52:57,054-0500 [15640 77] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-03T13:01:12,282-0500 [15640 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-04-03T13:18:30,235-0500 [16484 1] com.newrelic INFO: Writing to New Relic log file: C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\logs\newrelic_agent.log
+2025-04-03T13:18:30,237-0500 [16484 1] com.newrelic INFO: JRE vendor Oracle Corporation version 21.0.1
+2025-04-03T13:18:30,237-0500 [16484 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 21.0.1+12-LTS-29
+2025-04-03T13:18:30,238-0500 [16484 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+2025-04-03T13:18:30,253-0500 [16484 1] com.newrelic INFO: Agent Host: DESKTOP-HKB1NLP IP: 172.29.192.1
+2025-04-03T13:18:30,254-0500 [16484 1] com.newrelic INFO: New Relic Agent v8.19.0 is initializing...
+2025-04-03T13:18:31,709-0500 [16484 47] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-04-03T13:18:34,624-0500 [16484 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-04-03T13:18:35,326-0500 [16484 43] com.newrelic INFO: RMIStubs Transformer started
+2025-04-03T13:18:35,682-0500 [16484 1] com.newrelic INFO: Setting audit_mode to false
+2025-04-03T13:18:36,320-0500 [16484 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\Users\LENOVO\Documents\Trabajos U.sabana\7sem\patrones\corte2\parcial\newrelic\.\newrelic.yml
+2025-04-03T13:18:36,331-0500 [16484 1] com.newrelic INFO: New Relic Agent v8.19.0 has started
+2025-04-03T13:18:36,332-0500 [16484 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2025-04-03T13:18:36,333-0500 [16484 1] com.newrelic INFO: Premain startup complete in 7.663ms
+2025-04-03T13:18:36,341-0500 [16484 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-04-03T13:18:45,128-0500 [16484 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.39
+2025-04-03T13:19:01,361-0500 [16484 77] com.newrelic INFO: Host name is DESKTOP-HKB1NLP, display host DESKTOP-HKB1NLP for application parcial
+2025-04-03T13:19:01,363-0500 [16484 77] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-03T13:19:02,092-0500 [16484 77] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2025-04-03T13:19:02,546-0500 [16484 77] com.newrelic INFO: Max payload size is 1.000.000 bytes
+2025-04-03T13:19:02,547-0500 [16484 77] com.newrelic INFO: Agent run id: BZdHXZrtoBQbAGRCJyNfho9n7tGMAAIBAAAnIQEAAEBkAgQd_FGfAwAGOC4xOS4wAA9ERVNLVE9QLUhLQjFOTFAAB3BhcmNpYWw
+2025-04-03T13:19:02,548-0500 [16484 77] com.newrelic INFO: Agent 16484@DESKTOP-HKB1NLP/parcial connected to collector.newrelic.com:443
+2025-04-03T13:19:02,550-0500 [16484 77] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/6570535/applications/503075231
+2025-04-03T13:19:02,552-0500 [16484 77] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-03T13:19:02,553-0500 [16484 77] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-03T13:19:02,554-0500 [16484 77] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-03T13:19:02,559-0500 [16484 77] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-04-03T13:19:02,559-0500 [16484 77] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-04-03T13:19:02,560-0500 [16484 77] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-04-03T13:19:02,903-0500 [16484 77] com.newrelic INFO: Real user monitoring is enabled for application parcial. Auto instrumentation is enabled.
+2025-04-03T13:19:02,904-0500 [16484 77] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-04-03T13:34:29,579-0500 [16484 42] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
