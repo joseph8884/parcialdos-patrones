@@ -26,6 +26,18 @@ public class TransaccionService {
 
     private final ExecutorService executorService = Executors.newFixedThreadPool(30);
 
+    @Transactional
+    public void resetCuentas() {
+        CuentaORM cuenta1 = cuentaJPA.findByNombre("abc").orElse(new CuentaORM(null, "abc", BigDecimal.ZERO));
+        CuentaORM cuenta2 = cuentaJPA.findByNombre("cbd").orElse(new CuentaORM(null, "cbd", BigDecimal.ZERO));
+
+        cuenta1.setMonto(new BigDecimal("1000"));
+        cuenta2.setMonto(new BigDecimal("1000"));
+
+        cuentaJPA.save(cuenta1);
+        cuentaJPA.save(cuenta2);
+    }
+
     public void iniciarTransaccionesConcurrentes() {
         for (int i = 0; i < 30; i++) {
             executorService.execute(this::moverDinero);
@@ -36,40 +48,35 @@ public class TransaccionService {
     @Transactional
     public void moverDinero() {
         while (true) {
-            // Buscar las cuentas
+            BigDecimal monto = new BigDecimal("5");
+
+            // Restar saldo de "abc" solo si tiene suficiente dinero
+            int updatedRows = cuentaJPA.restarSaldo("abc", monto);
+            if (updatedRows == 0) {
+                System.out.println("La cuenta 'abc' se quedó sin saldo.");
+                break; // Salimos del bucle si ya no hay dinero
+            }
+
+            // Sumar saldo a "cbd"
+            cuentaJPA.sumarSaldo("cbd", monto);
+
+            // Obtener IDs de las cuentas
             Optional<CuentaORM> cuentaOrigenOpt = cuentaJPA.findByNombre("abc");
             Optional<CuentaORM> cuentaDestinoOpt = cuentaJPA.findByNombre("cbd");
 
             if (cuentaOrigenOpt.isEmpty() || cuentaDestinoOpt.isEmpty()) {
-                System.out.println("No se encontraron las cuentas");
+                System.out.println("No se encontraron las cuentas después de la transacción.");
                 break;
             }
 
-            CuentaORM cuentaOrigen = cuentaOrigenOpt.get();
-            CuentaORM cuentaDestino = cuentaDestinoOpt.get();
-
-            // Verificamos si aún hay dinero para transferir
-            if (cuentaOrigen.getMonto().compareTo(new BigDecimal("5")) < 0) {
-                System.out.println("La cuenta 'abc' se quedó sin saldo.");
-                break;
-            }
-
-            // Definimos el monto a transferir
-            BigDecimal monto = new BigDecimal("5");
-
-            // Transferir 5 pesos
-            cuentaOrigen.setMonto(cuentaOrigen.getMonto().subtract(monto));
-            cuentaDestino.setMonto(cuentaDestino.getMonto().add(monto));
-
-            // Guardar cambios en la DB
-            cuentaJPA.save(cuentaOrigen);
-            cuentaJPA.save(cuentaDestino);
+            Long idOrigen = cuentaOrigenOpt.get().getId();
+            Long idDestino = cuentaDestinoOpt.get().getId();
 
             // Crear y guardar la transacción
             TransaccionORM transaccion = new TransaccionORM(
                     null,
-                    cuentaOrigen.getId(),
-                    cuentaDestino.getId(),
+                    idOrigen,
+                    idDestino,
                     monto,
                     LocalDateTime.now()
             );
@@ -82,4 +89,5 @@ public class TransaccionService {
             NewRelic.addCustomParameter("Monto", monto.multiply(new BigDecimal("100")).intValue());
         }
     }
+
 }
