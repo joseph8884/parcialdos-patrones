@@ -1,44 +1,31 @@
 package patrones.pacialdos.parcial.services;
 
-import com.newrelic.api.agent.NewRelic;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
-import patrones.pacialdos.parcial.jpa.CuentaJPA;
-import patrones.pacialdos.parcial.jpa.TransaccionJPA;
-import patrones.pacialdos.parcial.orm.CuentaORM;
-import patrones.pacialdos.parcial.orm.TransaccionORM;
+
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.LockModeType;
 import jakarta.persistence.PersistenceContext;
 import javax.sql.DataSource;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.Optional;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.atomic.AtomicLong;
 
 @Service
 public class TransaccionService {
     private static final Logger logger = LoggerFactory.getLogger(TransaccionService.class);
-
-    @Autowired
-    private CuentaJPA cuentaJPA;
-
-    @Autowired
-    private TransaccionJPA transaccionJPA;
-
-    @Autowired
-    private DataSource dataSource;
 
     @PersistenceContext
     private EntityManager entityManager;
@@ -60,9 +47,11 @@ public class TransaccionService {
     private final AtomicInteger transaccionesExitosas = new AtomicInteger(0);
     private final AtomicInteger transaccionesFallidas = new AtomicInteger(0);
 
+    // Implementar un límite de tiempo o número de transacciones
+
     // Control global para la consistencia del saldo total
-    private final ReentrantLock sumLock = new ReentrantLock();
-    private BigDecimal totalSistema = new BigDecimal("20000"); // 10000 + 10000
+    private final ConcurrentMap<String, TransaccioEstado> registroTransacciones = new ConcurrentHashMap<>();
+    private final AtomicLong transaccionIdGenerator = new AtomicLong(0);
 
     @Transactional
     public void resetCuentas() {
@@ -101,12 +90,14 @@ public class TransaccionService {
     private void ejecutarTransferencias(int threadId) {
         int intentos = 0;
         int exitosConsecutivos = 0;
+        int cantidadTransferencias = 0;
 
         try {
             while (!finTransferencias.get()) {
                 boolean resultado = transferirDinero();
-
+                cantidadTransferencias++;
                 if (resultado) {
+
                     exitosConsecutivos++;
                     intentos = 0;
 
@@ -140,8 +131,8 @@ public class TransaccionService {
                 }
             }
 
-            logger.info("Hilo {} completado con {} transacciones exitosas",
-                    threadId, exitosConsecutivos);
+            logger.info("Hilo {} completado con {} transacciones",
+                    threadId, cantidadTransferencias);
 
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
@@ -157,56 +148,44 @@ public class TransaccionService {
      *
      * @return true si la transferencia fue exitosa, false si no hay suficiente saldo
      */
-    @Transactional(isolation = Isolation.SERIALIZABLE)
-    public boolean transferirDinero() {
+    @Transactional(isolation = Isolation.READ_COMMITTED) // Reducir nivel de aislamiento
+    public boolean  transferirDinero() {
         BigDecimal monto = new BigDecimal("5");
-
+        String transaccionId = String.valueOf(transaccionIdGenerator.incrementAndGet());
+        
         try {
-            // 1. Intentar realizar la transferencia con SQL directo
+            // Registrar intento de transacción
+            registroTransacciones.put(transaccionId, new TransaccioEstado(transaccionId, "abc", "cbd", monto, false));
+
+            
+            // Realizar transferencia con SQL optimizado
             int filasActualizadas = jdbcTemplate.update(
                     "UPDATE cuenta SET monto = monto - ? WHERE nombre = ? AND monto >= ?",
                     monto, "abc", monto
             );
-
-            // Si no se actualizó ninguna fila, significa que no hay saldo suficiente
+            
             if (filasActualizadas == 0) {
+                registroTransacciones.get(transaccionId).setFallida(true);
                 return false;
             }
-
-            // 2. Aumentar el saldo de la cuenta destino
-            jdbcTemplate.update(
+            
+                jdbcTemplate.update(
                     "UPDATE cuenta SET monto = monto + ? WHERE nombre = ?",
                     monto, "cbd"
             );
-
-            // 3. Registrar la transacción
-            insertarTransaccion(monto);
-
-            // 4. Incrementar contador y enviar métricas a New Relic
-            int totalExitosas = transaccionesExitosas.incrementAndGet();
-
-            // Log cada 100 transacciones
-            if (totalExitosas % 100 == 0) {
-                logger.info("Completadas {} transacciones exitosas", totalExitosas);
-                // Verificar consistencia periódicamente
-                verificarConsistenciaSaldos();
-            }
-
-            // Enviar métricas a New Relic
-            NewRelic.recordMetric("Custom/MontoTransferido", monto.floatValue());
-            NewRelic.incrementCounter("Custom/TransaccionesCompletadas");
-
+            
+            // Marcar transacción como exitosa
+            registroTransacciones.get(transaccionId).setExitosa(true);
+            
+            // Registrar en BD
+            insertarTransaccion(transaccionId, monto);
+            
             return true;
-
-        } catch (DataAccessException e) {
-            transaccionesFallidas.incrementAndGet();
-            logger.warn("Error de acceso a datos: {}", e.getMessage());
-            NewRelic.noticeError(e);
-            return false;
         } catch (Exception e) {
-            transaccionesFallidas.incrementAndGet();
-            logger.error("Error al realizar transferencia: {}", e.getMessage(), e);
-            NewRelic.noticeError(e);
+            // Marcar como fallida
+            if (registroTransacciones.containsKey(transaccionId)) {
+                registroTransacciones.get(transaccionId).setFallida(true);
+            }
             return false;
         }
     }
@@ -214,7 +193,7 @@ public class TransaccionService {
     /**
      * Inserta el registro de la transacción
      */
-    private void insertarTransaccion(BigDecimal monto) {
+    private void insertarTransaccion(String transaccionId, BigDecimal monto) {
         // Obtener IDs de las cuentas de manera segura
         Long origenId = jdbcTemplate.queryForObject(
                 "SELECT id FROM cuenta WHERE nombre = ?",
@@ -226,8 +205,8 @@ public class TransaccionService {
 
         // Insertar la transacción con SQL directo para mayor rendimiento
         jdbcTemplate.update(
-                "INSERT INTO transaccion (origen, destino, monto, timestamp) VALUES (?, ?, ?, ?)",
-                origenId, destinoId, monto, LocalDateTime.now()
+                "INSERT INTO transaccion (id, origen, destino, monto, timestamp) VALUES (?, ?, ?, ?, ?)",
+                transaccionId, origenId, destinoId, monto, LocalDateTime.now()
         );
     }
 
@@ -237,28 +216,6 @@ public class TransaccionService {
                 "SELECT monto FROM cuenta WHERE nombre = ?",
                 BigDecimal.class, nombreCuenta
         );
-    }
-
-    /**
-     * Verifica que la suma de los saldos de ambas cuentas sea consistente
-     */
-    private void verificarConsistenciaSaldos() {
-        // Adquirir lock para asegurar que la verificación es atómica
-        sumLock.lock();
-        try {
-            BigDecimal saldoABC = getSaldoActual("abc");
-            BigDecimal saldoCBD = getSaldoActual("cbd");
-            BigDecimal sumaActual = saldoABC.add(saldoCBD);
-
-            // Comprobar que el total del sistema se mantiene constante
-            if (!sumaActual.equals(totalSistema)) {
-                logger.error("INCONSISTENCIA DETECTADA: Suma actual ({}) != Total esperado ({})",
-                        sumaActual, totalSistema);
-                NewRelic.noticeError("Inconsistencia de saldos detectada");
-            }
-        } finally {
-            sumLock.unlock();
-        }
     }
 
     /**
@@ -287,4 +244,5 @@ public class TransaccionService {
         finTransferencias.set(true);
         executorService.shutdown();
     }
+
 }
