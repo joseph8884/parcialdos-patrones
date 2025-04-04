@@ -23,4 +23,7 @@ public class CuentaORM {
 
     @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal monto;
+    // Opcional: Añadir versión para optimistic locking como respaldo
+    @Version
+    private Long version;
 }
