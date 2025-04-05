@@ -62,14 +62,14 @@ public class TransaccionService {
 
         // Resetear cuentas usando SQL directo para evitar problemas de concurrencia
         jdbcTemplate.update("UPDATE cuenta SET monto = ? WHERE nombre = ?",
-                new BigDecimal("10000"), "abc");
+                new BigDecimal("1000"), "abc");
         jdbcTemplate.update("UPDATE cuenta SET monto = ? WHERE nombre = ?",
-                new BigDecimal("10000"), "cbd");
+                new BigDecimal("1000"), "cbd");
 
         // También actualizar cualquier entidad cacheada
         entityManager.clear();
 
-        logger.info("Cuentas reseteadas: abc y cbd ahora tienen 10,000 cada una");
+        logger.info("Cuentas reseteadas: abc y cbd ahora tienen 1,000 cada una");
     }
 
     public void iniciarTransaccionesConcurrentes() {
